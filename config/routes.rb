@@ -1,4 +1,5 @@
 BadTicketee::Application.routes.draw do
+  root :to => "projects#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -24,6 +25,7 @@ BadTicketee::Application.routes.draw do
   #       get 'sold'
   #     end
   #   end
+resources :projects
 
   # Sample resource route with sub-resources:
   #   resources :products do
